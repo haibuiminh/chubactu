@@ -43,7 +43,7 @@ export default function Home() {
       </div>
       
       <video autoPlay muted loop id="myVideo" className='px-6'>
-        <source src="/videos/video.mov" type="video/mp4" />
+        <source src="/videos/video.mp4" type="video/mp4" />
       </video>
 
       <div className="text-effect-wrapper p-3">
@@ -89,7 +89,7 @@ export default function Home() {
             ul.insertAdjacentHTML('afterend', ul.outerHTML);
             ul.nextSibling.setAttribute('aria-hidden', 'true');
         })"
-        className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+        className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)] mb-28"
               >
           <Link href={'https://www.tiktok.com/@phunidetu?_t=8oNOoCDcQvx&_r=1'}>
             <ul x-ref="logos" className="cursor-pointer flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">  
