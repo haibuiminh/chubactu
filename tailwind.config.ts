@@ -1,3 +1,4 @@
+import flowbite from "flowbite-react/tailwind";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -5,7 +6,9 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    flowbite.content(),
   ],
+  
   theme: {
     extend: {
       backgroundImage: {
@@ -13,8 +16,19 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+      },
+      keyframes: {
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        }
+      }           
     },
   },
-  plugins: [],
+  plugins: [
+    flowbite.plugin(),
+  ],
 };
 export default config;
